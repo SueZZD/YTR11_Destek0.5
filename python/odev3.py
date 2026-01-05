@@ -1,7 +1,7 @@
 KONE_SAYISI = 5
 KRITIK_ESIK = 1500
 
-def en_yakin_koni_kontrol():
+def enYakinKoni():
     mesafeler = []
 
     while len(mesafeler) < KONE_SAYISI:
@@ -20,4 +20,4 @@ def en_yakin_koni_kontrol():
     else:
         print(f"Yol Acik: Devam et. (En yakin: {en_yakin} mm)")
 
-en_yakin_koni_kontrol()
+enYakinKoni()
