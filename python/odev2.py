@@ -1,4 +1,4 @@
-def sapma_kontrol(sapma: float):
+def sapmaKontrol(sapma: float):
     if sapma > 1.0 or sapma < -1.0:
         print(f"ACIL DURUM: Pist Disi! Fren Yap. (Sapma: {sapma:.2f} m)")
     elif -0.1 <= sapma <= 0.1:
@@ -10,4 +10,4 @@ def sapma_kontrol(sapma: float):
 
 
 sapma_degeri = float(input("Metre cinsinden sapma degerini giriniz: "))
-sapma_kontrol(sapma_degeri)
+sapmaKontrol(sapma_degeri)
