@@ -1,16 +1,14 @@
-#include <stdio.h>
+MIN_DIST = 0.1
+MAX_DIST = 30.0
 
-#define MIN_DIST 0.1f
-#define MAX_DIST 30.0f
-
-int main() {
-    float mesafe;
-    printf("Mesafe girin: ");
-    if (scanf("%f", &mesafe) != 1) return 1; // Girdi kontrolü
-
-    if (mesafe < MIN_DIST) printf("PARAZIT!\n");
-    else if (mesafe > MAX_DIST) printf("COK UZAK\n");
-    else printf("OK: %.2f m\n", mesafe);
+try:
+    mesafe = float(input("Mesafe girin: "))
     
-    return 0;
-}
+    if mesafe < MIN_DIST:
+        print("PARAZIT!")
+    elif mesafe > MAX_DIST:
+        print("COK UZAK")
+    else:
+        print(f"OK: {mesafe:.2f} m")
+except ValueError:
+    print("HATA: Gecersiz girdi!")
