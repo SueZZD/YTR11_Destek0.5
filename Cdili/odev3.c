@@ -25,7 +25,7 @@ void enYakinKoniKontrol() {
     }
   
     if (enYakin < 1500) {
-        printf("KRITIK: Cok yakinda engel var! Yavasla. (En yakin: %d mm)\n", enYakin);
+        printf("KRITIK: Cok yakinda engel var! Yavasla.\n";
     } else {
         printf("Yol Acik: Devam et. (En yakin: %d mm)\n", enYakin);
     }
