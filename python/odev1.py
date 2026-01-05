@@ -1,4 +1,4 @@
-def sensor_verisi(mesafe: float):
+def sensorVerisi(mesafe: float):
     if mesafe < 0.1:
         print(f"Hatali veri: ({mesafe:.2f})")
     elif mesafe > 30.0:
@@ -8,4 +8,4 @@ def sensor_verisi(mesafe: float):
 
 
 veri = float(input("Metre cinsinden bir mesafe degeri girin: "))
-sensor_verisi(veri)
+sensorVerisi(veri)
